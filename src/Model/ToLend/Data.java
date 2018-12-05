@@ -1,4 +1,4 @@
-package Model;
+package Model.ToLend;
 
 public class Data {
     Vehicle[] allVehicles = new Vehicle[30];

@@ -1,6 +1,6 @@
-package Model;
+package Model.ToLend;
 
-public class Walking extends Vehicle {
+public class BigFlaying extends Vehicle {
     String[] names = {"Paradox", "Aura", "Avalanche", "Eternity", "Scout", "Flux", "Oracle", "Centaur", "Eagle",
             "Corsair"};
 

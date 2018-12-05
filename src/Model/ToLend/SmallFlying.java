@@ -1,4 +1,4 @@
-package Model;
+package Model.ToLend;
 
 public class SmallFlying extends Vehicle {
     String[] names = {"Paradox", "Aura", "Avalanche", "Eternity", "Scout", "Flux", "Oracle", "Centaur", "Eagle",

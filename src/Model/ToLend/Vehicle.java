@@ -1,4 +1,4 @@
-package Model;
+package Model.ToLend;
 
 public abstract class Vehicle {
     String name;
