@@ -2,7 +2,7 @@ package Controller;
 
 import Model.Vehicle;
 
-public class Operations {
+public class Lender {
     public Vehicle[] showAllVehicles(Vehicle[] listOfVehicles) {
         return null;
     }
