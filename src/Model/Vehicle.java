@@ -2,13 +2,13 @@ package Model;
 
 public class Vehicle {
 
-    String name;
-    String model;
-    int dateOfProduction;
-    int vehicleMileage;
-    String type;
-    int fuelAmount;
-    String isVehicleLend;
+    private String name;
+    private String model;
+    private int dateOfProduction;
+    private int vehicleMileage;
+    private String type;
+    private int fuelAmount;
+    private String isVehicleLend;
 
 
 //Transporter, mysliwiec, walking, driving

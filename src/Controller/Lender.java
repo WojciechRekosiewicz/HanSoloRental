@@ -5,12 +5,12 @@ import Model.Vehicle;
 import java.util.ArrayList;
 
 public class Lender {
-    public Vehicle[] showAllVehicles( ArrayList<Vehicle> listOfVehicles) {
+    public ArrayList<Vehicle> showAllVehicles( ArrayList<Vehicle> listOfVehicles) {
 
         return null;
     }
 
-    public Vehicle addVehicle(String name, String model, int dateOfProduction, int vehicleMileage, String type, int fuelAmount) {
+    public ArrayList<Vehicle> addVehicle(String name, String model, int dateOfProduction, int vehicleMileage, String type, int fuelAmount) {
         return null;
     }
 
