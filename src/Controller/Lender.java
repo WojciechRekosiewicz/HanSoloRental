@@ -10,8 +10,8 @@ public class Lender {
         return null;
     }
 
-    public ArrayList<Vehicle> addVehicle(String name, String model, int dateOfProduction, int vehicleMileage, String type, int fuelAmount) {
-        return null;
+    public void addVehicle(String name, String model, int dateOfProduction, int vehicleMileage, String type,
+                           int fuelAmount, boolean isLend, String whereIsPaked) {
     }
 
     public void deleteVehicle(String name,  ArrayList<Vehicle> listOfVehicles) {

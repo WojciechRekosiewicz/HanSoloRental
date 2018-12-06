@@ -8,11 +8,27 @@ public class Vehicle {
     private int vehicleMileage;
     private String type;
     private int fuelAmount;
-    private String isVehicleLend;
+    private Boolean isVehicleRented;
+
+    private String whereIsParked;
+
+
+
+    public Vehicle(String name, String model, int dateOfProduction, int vehicleMileage, String type, int fuelAmount, Boolean isVehicleRented, String whereIsParked) {
+        this.name = name;
+        this.model = model;
+        this.dateOfProduction = dateOfProduction;
+        this.vehicleMileage = vehicleMileage;
+        this.type = type;
+        this.fuelAmount = fuelAmount;
+        this.isVehicleRented = isVehicleRented;
+        this.whereIsParked = whereIsParked;
+    }
+
+
 
 
 //Transporter, mysliwiec, walking, driving
-
     public String getName() {
         return name;
     }
@@ -20,7 +36,6 @@ public class Vehicle {
     public void setName(String name) {
         this.name = name;
     }
-
     public String getModel() {
         return model;
     }
@@ -61,12 +76,33 @@ public class Vehicle {
         this.fuelAmount = fuelAmount;
     }
 
-    public String getIsVehicleLend() {
-        return isVehicleLend;
+    public Boolean getVehicleRented() {
+        return isVehicleRented;
     }
 
-    public void setIsVehicleLend(String isVehicleLend) {
-        this.isVehicleLend = isVehicleLend;
+    public void setVehicleRented(Boolean vehicleRented) {
+        isVehicleRented = vehicleRented;
+    }
+
+    public String getWhereIsParked() {
+        return whereIsParked;
+    }
+
+    public void setWhereIsParked(String whereIsParked) {
+        this.whereIsParked = whereIsParked;
+    }
+
+    @Override
+    public String toString() {
+        return "Vehicle{" +
+                "name='" + name + '\'' +
+                ", model='" + model + '\'' +
+                ", dateOfProduction=" + dateOfProduction +
+                ", vehicleMileage=" + vehicleMileage +
+                ", type='" + type + '\'' +
+                ", fuelAmount=" + fuelAmount +
+                ", isVehicleRented=" + isVehicleRented +
+                '}';
     }
 
 

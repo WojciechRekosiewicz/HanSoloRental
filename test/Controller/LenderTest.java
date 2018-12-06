@@ -7,8 +7,6 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 
-import static org.junit.Assert.*;
-
 public class LenderTest {
 
     @Test
@@ -17,6 +15,16 @@ public class LenderTest {
 
     @Test
     public void addVehicle() {
+        Data data = new Data();
+        ArrayList<Vehicle> testArray = data.getAllVehicles();
+        int lengthOfArrayExpected = 21;
+        Vehicle vehicle = new Vehicle("hehe", "x-wing", 0, 0, "walking", 100, false, "back");
+        Lender lender = new Lender();
+        lender.addVehicle("hehe", "x-wing", 0, 0, "walking", 100, false, "back");
+
+        Assert.assertEquals(lengthOfArrayExpected, testArray.size());
+        Assert.assertEquals(vehicle, testArray.get(testArray.size() - 1));
+
     }
 
     @Test
@@ -30,6 +38,7 @@ public class LenderTest {
         lender.deleteVehicle(nameToDelete, testArray);
 
         Assert.assertEquals(lengthOfArrayExpected, testArray.size());
+
     }
 
     @Test
