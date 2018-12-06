@@ -1,9 +1,11 @@
 package Controller;
 
-import Model.ToLend.Vehicle;
+import Model.Vehicle;
+
+import java.util.ArrayList;
 
 public class Lender {
-    public Vehicle[] showAllVehicles(Vehicle[] listOfVehicles) {
+    public Vehicle[] showAllVehicles( ArrayList<Vehicle> listOfVehicles) {
 
         return null;
     }
@@ -12,17 +14,17 @@ public class Lender {
         return null;
     }
 
-    public void deleteVehicle(String name, Vehicle[] listOfVehicles) {
+    public void deleteVehicle(String name,  ArrayList<Vehicle> listOfVehicles) {
     }
 
-    public Vehicle showVehicleSpecs(String name, Vehicle[] listOfVehicles) {
+    public Vehicle showVehicleSpecs(String name, ArrayList<Vehicle> listOfVehicles) {
         return null;
 
     }
 
-    public void lendVehicle(String name, Vehicle[] listOfVehicles) {
+    public void lendVehicle(String name,  ArrayList<Vehicle> listOfVehicles) {
     }
 
-    public void returnVehicle(String name, Vehicle[] listOfVehicles) {
+    public void returnVehicle(String name,  ArrayList<Vehicle> listOfVehicles) {
     }
 }
