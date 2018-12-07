@@ -18,9 +18,11 @@ public class LenderTest {
         Data data = new Data();
         ArrayList<Vehicle> testArray = data.getAllVehicles();
         int lengthOfArrayExpected = 21;
-        Vehicle vehicle = new Vehicle("hehe", "x-wing", 0, 0, "walking", 100, false, "back");
+        Vehicle vehicle = new Vehicle("hehe", "x-wing", 0, 0, "walking",
+                100, false, "back");
         Lender lender = new Lender();
-        lender.addVehicle("hehe", "x-wing", 0, 0, "walking", 100, false, "back");
+        lender.addVehicle("hehe", "x-wing", 0, 0, "walking",
+                100, false, "back");
 
         Assert.assertEquals(lengthOfArrayExpected, testArray.size());
         Assert.assertEquals(vehicle, testArray.get(testArray.size() - 1));
@@ -43,6 +45,33 @@ public class LenderTest {
 
     @Test
     public void showVehicleSpecs() {
+        Data data = new Data();
+        ArrayList<Vehicle> testArray = data.getAllVehicles();
+        String nameToDisplay = "x-wing";
+        String modelToDisplay = "x-wing";
+        int dateOfProduction = 1;
+        int vehicleMileage = 10;
+        String type = "fighter";
+        int fuelAmount = 100;
+        boolean isVehicleRented = false;
+
+        Lender lender = new Lender();
+        lender.showVehicleSpecs(nameToDisplay, testArray);
+
+        String expected = "name='" + nameToDisplay + '\'' +
+                ", model='" + modelToDisplay + '\'' +
+                ", dateOfProduction=" + dateOfProduction +
+                ", vehicleMileage=" + vehicleMileage +
+                ", type='" + type + '\'' +
+                ", fuelAmount=" + fuelAmount +
+                ", isVehicleRented=" + isVehicleRented +
+                '}';
+
+
+        Assert.assertEquals(expected  , lender.showVehicleSpecs(nameToDisplay, testArray));
+
+
+
     }
 
     @Test

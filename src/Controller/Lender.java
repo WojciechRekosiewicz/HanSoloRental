@@ -17,7 +17,8 @@ public class Lender {
     public void deleteVehicle(String name,  ArrayList<Vehicle> listOfVehicles) {
     }
 
-    public Vehicle showVehicleSpecs(String name, ArrayList<Vehicle> listOfVehicles) {
+    public String showVehicleSpecs(String name, ArrayList<Vehicle> listOfVehicles) {
+
         return null;
 
     }
