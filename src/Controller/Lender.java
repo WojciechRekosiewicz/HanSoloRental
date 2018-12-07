@@ -5,7 +5,7 @@ import Model.Vehicle;
 import java.util.ArrayList;
 
 public class Lender {
-    public ArrayList<Vehicle> showAllVehicles( ArrayList<Vehicle> listOfVehicles) {
+    public String[] showAllVehicles( ArrayList<Vehicle> listOfVehicles) {
 
         return null;
     }
@@ -23,9 +23,11 @@ public class Lender {
 
     }
 
-    public void lendVehicle(String name,  ArrayList<Vehicle> listOfVehicles) {
+    public boolean lendVehicle(String name,  ArrayList<Vehicle> listOfVehicles) {
+        return true;
     }
 
-    public void returnVehicle(String name,  ArrayList<Vehicle> listOfVehicles) {
+    public boolean returnVehicle(String name,  ArrayList<Vehicle> listOfVehicles) {
+        return false;
     }
 }
