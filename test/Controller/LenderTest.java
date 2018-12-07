@@ -20,6 +20,7 @@ public class LenderTest {
         String type = "fighter";
         int fuelAmount = 100;
         boolean isVehicleRented = false;
+        String whereIsParked = "Back";
 
         Lender lender = new Lender();
         lender.showAllVehicles(testArray);
@@ -31,6 +32,7 @@ public class LenderTest {
                 ", type='" + type + '\'' +
                 ", fuelAmount=" + fuelAmount +
                 ", isVehicleRented=" + isVehicleRented +
+                ", whereIsParked='" + whereIsParked + '\'' +
                 '}';
 
 
@@ -79,6 +81,7 @@ public class LenderTest {
         String type = "fighter";
         int fuelAmount = 100;
         boolean isVehicleRented = false;
+        String whereIsParked = "Back";
 
         Lender lender = new Lender();
         lender.showVehicleSpecs(nameToDisplay, testArray);
@@ -90,6 +93,7 @@ public class LenderTest {
                 ", type='" + type + '\'' +
                 ", fuelAmount=" + fuelAmount +
                 ", isVehicleRented=" + isVehicleRented +
+                ", whereIsParked='" + whereIsParked + '\'' +
                 '}';
 
 

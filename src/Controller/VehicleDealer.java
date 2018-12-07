@@ -1,8 +1,17 @@
 package Controller;
 
+import Model.Vehicle;
+
+import java.util.ArrayList;
+
 public class VehicleDealer {
-    public void showCarsInFront(){
+    public String[] showCarsInFront(ArrayList<Vehicle> listOfVehicles){
+
+        return null;
 
     }
-    public void showCarsInBack(){}
+    public String[] showCarsInBack(ArrayList<Vehicle> listOfVehicles){
+
+        return null;
+    }
 }

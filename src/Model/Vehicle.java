@@ -3,13 +3,13 @@ package Model;
 public class Vehicle {
 
     private String name;
+
     private String model;
     private int dateOfProduction;
     private int vehicleMileage;
     private String type;
     private int fuelAmount;
     private Boolean isVehicleRented;
-
     private String whereIsParked;
 
 
@@ -29,17 +29,17 @@ public class Vehicle {
 
 
 //Transporter, mysliwiec, walking, driving
+
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
+
     public String getModel() {
         return model;
     }
-
     public void setModel(String model) {
         this.model = model;
     }
@@ -101,8 +101,11 @@ public class Vehicle {
                 ", type='" + type + '\'' +
                 ", fuelAmount=" + fuelAmount +
                 ", isVehicleRented=" + isVehicleRented +
+                ", whereIsParked='" + whereIsParked + '\'' +
                 '}';
     }
+
+
 
 
 
