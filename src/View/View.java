@@ -1,8 +1,14 @@
 package View;
 
+import Controller.Lender;
+import Model.Data;
+
 import java.util.Scanner;
 
 public class View {
+    Data data = new Data();
+    Lender lender = new Lender();
+
     public void Menu(){
         int choose;
         System.out.println("Choose what do you wanna do");
@@ -24,13 +30,17 @@ public class View {
         int choose;
         System.out.println("Lend options");
         System.out.println("1 to show all vehicle aval");
+        System.out.println("7 to go back to menu");
         Scanner scanner = new Scanner(System.in);
         choose = scanner.nextInt();
         switch (choose){
             case 1:
-                System.out.println("aval");
+                System.out.println("Available");
+                allAvailable();
                 break;
             case 2:
+
+            case 7:
                 Menu();
                 break;
         }
@@ -38,6 +48,13 @@ public class View {
     }
     public void subMenuVehicleDealer(){
         System.out.println("Dealer options");
+
+    }
+
+    public void allAvailable(){
+        for (int x=0; x < lender.showAllVehicles(data.getAllVehicles()).size(); x++){
+            System.out.println(lender.showAllVehicles(data.getAllVehicles()).get(x));
+        }
 
     }
 }

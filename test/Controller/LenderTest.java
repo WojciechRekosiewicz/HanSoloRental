@@ -36,7 +36,7 @@ public class LenderTest {
                 '}';
 
 
-        Assert.assertEquals(expected ,  lender.showAllVehicles(testArray)[0]);
+        Assert.assertEquals(expected ,  lender.showAllVehicles(testArray).get(0));
 
     }
 

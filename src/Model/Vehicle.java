@@ -25,9 +25,6 @@ public class Vehicle {
         this.whereIsParked = whereIsParked;
     }
 
-
-
-
 //Transporter, mysliwiec, walking, driving
 
     public String getName() {
