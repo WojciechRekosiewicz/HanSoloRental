@@ -111,7 +111,7 @@ public class LenderTest {
         ArrayList<Vehicle> testArray = data.getAllVehicles();
         boolean isVehicleRented = true;
         String name= "x-wing";
-        int positionOfXWing = 10;
+        int positionOfXWing = 0;
 
         Lender lender = new Lender();
         lender.lendVehicle(name, testArray);
@@ -126,12 +126,14 @@ public class LenderTest {
         ArrayList<Vehicle> testArray = data.getAllVehicles();
         boolean isVehicleReturned = false;
         String name= "x-wing";
-        int positionOfXWing = 10;
+        int positionOfXWing = 0;
 
         Lender lender = new Lender();
+        //change status
+        testArray.get(0).setVehicleRented(true);
+
         lender.returnVehicle(name, testArray);
 
-
-        Assert.assertNotEquals(isVehicleReturned, testArray.get(positionOfXWing).getVehicleRented());
+        Assert.assertEquals(isVehicleReturned, testArray.get(positionOfXWing).getVehicleRented());
     }
 }

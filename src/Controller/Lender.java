@@ -48,11 +48,31 @@ public class Lender {
 
     }
 
-    public boolean lendVehicle(String name,  ArrayList<Vehicle> listOfVehicles) {
-        return true;
+    public String lendVehicle(String name,  ArrayList<Vehicle> listOfVehicles) {
+        boolean rent = true;
+        String message = "Vehicle with name " + name + " rented";
+        for (Vehicle listOfVehicle : listOfVehicles) {
+            if (name.equals(listOfVehicle.getName())) {
+                listOfVehicle.setVehicleRented(rent);
+                return message;
+            }
+        }
+        message = "Vehicle with name " + name + " not found";
+
+        return message;
     }
 
-    public boolean returnVehicle(String name,  ArrayList<Vehicle> listOfVehicles) {
-        return false;
+    public String returnVehicle(String name,  ArrayList<Vehicle> listOfVehicles) {
+        boolean returnVehilce = false;
+        String message = "Vehicle with name " + name + " returned";
+        for (Vehicle listOfVehicle : listOfVehicles) {
+            if (name.equals(listOfVehicle.getName())) {
+                listOfVehicle.setVehicleRented(returnVehilce);
+                return message;
+            }
+        }
+        message = "Vehicle with name " + name + " not found";
+
+        return message;
     }
 }
