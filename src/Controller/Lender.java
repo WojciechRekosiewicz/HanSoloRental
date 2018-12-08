@@ -16,8 +16,10 @@ public class Lender {
         return vehicleSpecsList;
     }
 
-    public void addVehicle(String name, String model, int dateOfProduction, int vehicleMileage, String type,
-                           int fuelAmount, boolean isLend, String whereIsPaked) {
+    public void addVehicle(ArrayList<Vehicle> listOfVehicles, String name, String model, int dateOfProduction,
+                           int vehicleMileage, String type, int fuelAmount, boolean isLend, String whereIsPaked) {
+        listOfVehicles.add(new Vehicle(name, model, dateOfProduction, vehicleMileage, type, fuelAmount,
+                isLend, whereIsPaked));
     }
 
     public void deleteVehicle(String name,  ArrayList<Vehicle> listOfVehicles) {

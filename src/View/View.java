@@ -52,9 +52,10 @@ public class View {
     }
 
     public void allAvailable(){
-        for (int x=0; x < lender.showAllVehicles(data.getAllVehicles()).size(); x++){
-            System.out.println(lender.showAllVehicles(data.getAllVehicles()).get(x));
+        for (int x=0; x < lender.showAllVehicles(data.getAllVehicles()).size(); x++) {
+            if (!data.getAllVehicles().get(x).getVehicleRented()) {
+                System.out.println(lender.showAllVehicles(data.getAllVehicles()).get(x));
+            }
         }
-
     }
 }

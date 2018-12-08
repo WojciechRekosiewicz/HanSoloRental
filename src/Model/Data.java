@@ -5,15 +5,16 @@ import java.util.ArrayList;
 
 public class Data {
 
-    private String[] name = {"1", "", "", "", "", "", "", "", "", "", "", "", "", "x-wing", "", "", "", "", "", "",};
-    private String[] model = {"1", "", "", "", "", "", "", "", "", "", "", "", "", "x-wing", "", "", "", "", "", "",};
-    private int[] dateOfProduction ={10, 20, 1, 30, 1000, 2000, 3000, 54000000, 3, 5, 324, 12, 32, 6543, 243,
+    private String[] name = {"x-wing", "", "", "", "", "", "", "", "", "", "", "", "", "x-wing", "", "", "", "", "", "",};
+    private String[] model = {"x-wing", "", "", "", "", "", "", "", "", "", "", "", "", "x-wing", "", "", "", "", "", "",};
+    private int[] dateOfProduction ={1, 20, 1, 30, 1000, 2000, 3000, 54000000, 3, 5, 324, 12, 32, 6543, 243,
             123, 123, 213, 5, 77 };
-    private int[] vehicleMillage = {2220,0,0,100000,123213, 213213, 423432, 32312, 231213, 213123, 43, 2, 213,
+    private int[] vehicleMillage = {10,0,0,100000,123213, 213213, 423432, 32312, 231213, 213123, 43, 2, 213,
             231, 21, 657657, 23234, 342423, 432 ,324234};
-    private String[] type = {"Walking", "Walking", "Walking", "Walking", "Walking",
-            "Driving", "Driving", "Driving", "Driving", "Driving", "Fighter", "Fighter", "Fighter", "Fighter",
-            "Fighter", "Transporter", "Transporter", "Transporter", "Transporter", "Transporter",};
+    private String[] type = {"Fighter", "Fighter", "Fighter", "Fighter",
+            "Fighter", "Transporter", "Transporter", "Transporter", "Transporter", "Transporter",
+            "Walking", "Walking", "Walking", "Walking", "Walking",
+            "Driving", "Driving", "Driving", "Driving", "Driving",};
     private int fuelAmount = 100;
     private boolean isVehicleRented = false;
     private String[] whereIsParked = {"Back", "Back", "Back", "Back", "Back", "Front", "Front",
