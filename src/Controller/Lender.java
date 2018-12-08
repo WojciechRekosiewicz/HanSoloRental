@@ -10,6 +10,7 @@ public class Lender {
         ArrayList<String> vehicleSpecsList = new ArrayList<String>();
 
         for (int x = 0; x < listOfVehicles.size(); x++) {
+            if (!listOfVehicles.get(x).getVehicleRented())
             vehicleSpecsList.add(x, listOfVehicles.get(x).toString());
         }
 

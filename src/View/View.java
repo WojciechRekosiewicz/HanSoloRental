@@ -66,9 +66,9 @@ public class View {
 
     public void allAvailable(){
         for (int x=0; x < lender.showAllVehicles(vehicleArray).size(); x++) {
-            if (!vehicleArray.get(x).getVehicleRented()) {
+
                 System.out.println(lender.showAllVehicles(vehicleArray).get(x));
-            }
+
         }
     }
 }

@@ -23,7 +23,7 @@ public class LenderTest {
         String whereIsParked = "Back";
 
         Lender lender = new Lender();
-        lender.showAllVehicles(testArray);
+      //  lender.showAllVehicles(testArray);
 
         String expected = "name='" + nameToDisplay + '\'' +
                 ", model='" + modelToDisplay + '\'' +

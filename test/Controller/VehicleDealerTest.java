@@ -15,19 +15,20 @@ public class VehicleDealerTest {
     public void showCarsInFront() {
         Data data = new Data();
         ArrayList<Vehicle> testArray = data.getAllVehicles();
-        String name = "x-wing";
-        String model = "x-wing";
+        String nameToDisplay = "x-wing";
+        String modelToDisplay = "x-wing";
         int dateOfProduction = 1;
         int vehicleMileage = 10;
-        String type = "fighter";
+        String type = "Fighter";
         int fuelAmount = 100;
         boolean isVehicleRented = false;
         String whereIsParked = "Back";
 
         VehicleDealer vehicleDealer = new VehicleDealer();
+        vehicleDealer.showCarsInFront(testArray);
 
-        String expected = "name='" + name + '\'' +
-                ", model='" + model + '\'' +
+        String expected = "name='" + nameToDisplay + '\'' +
+                ", model='" + modelToDisplay + '\'' +
                 ", dateOfProduction=" + dateOfProduction +
                 ", vehicleMileage=" + vehicleMileage +
                 ", type='" + type + '\'' +
@@ -36,7 +37,8 @@ public class VehicleDealerTest {
                 ", whereIsParked='" + whereIsParked + '\'' +
                 '}';
 
-        Assert.assertEquals(expected  , vehicleDealer.showCarsInFront(testArray)[0]);
+
+        Assert.assertEquals(expected , vehicleDealer.showCarsInFront(testArray).get(0));
 
     }
 
@@ -65,7 +67,7 @@ public class VehicleDealerTest {
                 ", whereIsParked='" + whereIsParked + '\'' +
                 '}';
 
-        Assert.assertEquals(expected  , vehicleDealer.showCarsInFront(testArray)[0]);
+        Assert.assertEquals(expected  , vehicleDealer.showCarsInFront(testArray).get(0));
 
     }
 }
