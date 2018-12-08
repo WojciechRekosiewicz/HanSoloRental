@@ -17,10 +17,10 @@ public class Lender {
     }
 
     public void addVehicle(ArrayList<Vehicle> listOfVehicles, String name, String model, int dateOfProduction,
-                           int vehicleMileage, String type, int fuelAmount, boolean isLend, String whereIsPaked) {
+                           int vehicleMileage, String type, int fuelAmount, boolean isLend, String whereIsParked) {
 
         listOfVehicles.add(new Vehicle(name, model, dateOfProduction, vehicleMileage, type, fuelAmount,
-                isLend, whereIsPaked));
+                isLend, whereIsParked));
     }
 
     public void deleteVehicle(String name, ArrayList<Vehicle> listOfVehicles) {
@@ -35,8 +35,16 @@ public class Lender {
 
 
     public String showVehicleSpecs(String name, ArrayList<Vehicle> listOfVehicles) {
+        String vehicleSpecs;
+        for (Vehicle listOfVehicle : listOfVehicles) {
+            if (name.equals(listOfVehicle.getName())) {
+                vehicleSpecs = listOfVehicle.toString();
+                return vehicleSpecs;
+            }
+        }
+        vehicleSpecs = "no result found";
 
-        return null;
+        return vehicleSpecs;
 
     }
 

@@ -80,7 +80,7 @@ public class LenderTest {
         String modelToDisplay = "x-wing";
         int dateOfProduction = 1;
         int vehicleMileage = 10;
-        String type = "fighter";
+        String type = "Fighter";
         int fuelAmount = 100;
         boolean isVehicleRented = false;
         String whereIsParked = "Back";
