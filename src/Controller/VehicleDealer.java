@@ -6,7 +6,6 @@ import java.util.ArrayList;
 
 public class VehicleDealer {
     public String[] showCarsInFront(ArrayList<Vehicle> listOfVehicles){
-
         return null;
 
     }
