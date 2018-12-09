@@ -9,7 +9,16 @@ public class VehicleDealer {
         ArrayList<String> vehicleSpecsList = new ArrayList<String>();
 
         for (int x = 0; x < listOfVehicles.size(); x++) {
-            if (listOfVehicles.get(x).getWhereIsParked().equals("Front")){
+            if ((listOfVehicles.get(x).getWhereIsParked()).equals("Front")){
+                System.out.println("wtf");
+                System.out.println("wtf");
+                System.out.println("wtf");
+                System.out.println("wtf");
+                System.out.println("wtf");
+                System.out.println("wtf");
+                System.out.println("wtf");
+                System.out.println("wtf");
+
                 vehicleSpecsList.add(x, listOfVehicles.get(x).toString());
             }
         }
@@ -21,7 +30,7 @@ public class VehicleDealer {
         ArrayList<String> vehicleSpecsList = new ArrayList<String>();
 
         for (int x = 0; x < listOfVehicles.size(); x++) {
-            if (listOfVehicles.get(x).getWhereIsParked().equals("Back"))
+            if ((listOfVehicles.get(x).getWhereIsParked()).equals("Back"))
                 vehicleSpecsList.add(x, listOfVehicles.get(x).toString());
         }
 

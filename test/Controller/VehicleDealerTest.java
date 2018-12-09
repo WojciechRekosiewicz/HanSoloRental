@@ -25,7 +25,7 @@ public class VehicleDealerTest {
         String whereIsParked = "Back";
 
         VehicleDealer vehicleDealer = new VehicleDealer();
-        vehicleDealer.showCarsInFront(testArray);
+        ArrayList<String> testArray1 = vehicleDealer.showCarsInFront(testArray);
 
         String expected = "name='" + nameToDisplay + '\'' +
                 ", model='" + modelToDisplay + '\'' +
@@ -36,9 +36,9 @@ public class VehicleDealerTest {
                 ", isVehicleRented=" + isVehicleRented +
                 ", whereIsParked='" + whereIsParked + '\'' +
                 '}';
+//        vehicleDealer.showCarsInFront(testArray).get(0)
 
-
-        Assert.assertEquals(expected , vehicleDealer.showCarsInFront(testArray).get(0));
+        Assert.assertEquals(expected , testArray1.get(0));
 
     }
 
