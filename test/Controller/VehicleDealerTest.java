@@ -15,14 +15,14 @@ public class VehicleDealerTest {
     public void showCarsInFront() {
         Data data = new Data();
         ArrayList<Vehicle> testArray = data.getAllVehicles();
-        String nameToDisplay = "x-wing";
-        String modelToDisplay = "x-wing";
-        int dateOfProduction = 1;
-        int vehicleMileage = 10;
+        String nameToDisplay = "taifighter";
+        String modelToDisplay = "taifighter";
+        int dateOfProduction = 20;
+        int vehicleMileage = 0;
         String type = "Fighter";
         int fuelAmount = 100;
         boolean isVehicleRented = false;
-        String whereIsParked = "Back";
+        String whereIsParked = "Front";
 
         VehicleDealer vehicleDealer = new VehicleDealer();
         ArrayList<String> testArray1 = vehicleDealer.showCarsInFront(testArray);
@@ -50,10 +50,10 @@ public class VehicleDealerTest {
         String model = "x-wing";
         int dateOfProduction = 1;
         int vehicleMileage = 10;
-        String type = "fighter";
+        String type = "Fighter";
         int fuelAmount = 100;
         boolean isVehicleRented = false;
-        String whereIsParked = "Front";
+        String whereIsParked = "Back";
 
         VehicleDealer vehicleDealer = new VehicleDealer();
 
@@ -67,7 +67,7 @@ public class VehicleDealerTest {
                 ", whereIsParked='" + whereIsParked + '\'' +
                 '}';
 
-        Assert.assertEquals(expected  , vehicleDealer.showCarsInFront(testArray).get(0));
+        Assert.assertEquals(expected  , vehicleDealer.showCarsInBack(testArray).get(0));
 
     }
 }

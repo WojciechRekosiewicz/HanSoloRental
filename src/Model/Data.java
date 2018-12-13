@@ -5,8 +5,8 @@ import java.util.ArrayList;
 
 public class Data {
 
-    private String[] name = {"x-wing", "", "", "", "", "", "", "", "", "", "", "", "", "x-wing", "", "", "", "", "", "",};
-    private String[] model = {"x-wing", "", "", "", "", "", "", "", "", "", "", "", "", "x-wing", "", "", "", "", "", "",};
+    private String[] name = {"x-wing", "taifighter", "", "", "", "", "", "", "", "", "", "", "", "x-wing", "", "", "", "", "", "",};
+    private String[] model = {"x-wing", "taifighter", "", "", "", "", "", "", "", "", "", "", "", "x-wing", "", "", "", "", "", "",};
     private int[] dateOfProduction ={1, 20, 1, 30, 1000, 2000, 3000, 54000000, 3, 5, 324, 12, 32, 6543, 243,
             123, 123, 213, 5, 77 };
     private int[] vehicleMillage = {10,0,0,100000,123213, 213213, 423432, 32312, 231213, 213123, 43, 2, 213,
@@ -17,7 +17,7 @@ public class Data {
             "Driving", "Driving", "Driving", "Driving", "Driving",};
     private int fuelAmount = 100;
     private boolean isVehicleRented = false;
-    private String[] whereIsParked = {"Back", "Back", "Back", "Back", "Back", "Front", "Front",
+    private String[] whereIsParked = {"Back", "Front", "Back", "Back", "Back", "Front", "Front",
             "Front", "Front", "Front", "Front", "Front", "Front", "Front", "Front", "Back", "Back",
             "Back", "Back", "Back",};
 

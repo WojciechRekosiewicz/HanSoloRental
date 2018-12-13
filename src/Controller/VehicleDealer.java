@@ -10,16 +10,7 @@ public class VehicleDealer {
 
         for (int x = 0; x < listOfVehicles.size(); x++) {
             if ((listOfVehicles.get(x).getWhereIsParked()).equals("Front")){
-                System.out.println("wtf");
-                System.out.println("wtf");
-                System.out.println("wtf");
-                System.out.println("wtf");
-                System.out.println("wtf");
-                System.out.println("wtf");
-                System.out.println("wtf");
-                System.out.println("wtf");
-
-                vehicleSpecsList.add(x, listOfVehicles.get(x).toString());
+                vehicleSpecsList.add(listOfVehicles.get(x).toString());
             }
         }
 
@@ -31,7 +22,7 @@ public class VehicleDealer {
 
         for (int x = 0; x < listOfVehicles.size(); x++) {
             if ((listOfVehicles.get(x).getWhereIsParked()).equals("Back"))
-                vehicleSpecsList.add(x, listOfVehicles.get(x).toString());
+                vehicleSpecsList.add(listOfVehicles.get(x).toString());
         }
 
         return vehicleSpecsList;

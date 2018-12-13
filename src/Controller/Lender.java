@@ -52,13 +52,18 @@ public class Lender {
     public String lendVehicle(String name,  ArrayList<Vehicle> listOfVehicles) {
         boolean rent = true;
         String message = "Vehicle with name " + name + " rented";
-        for (Vehicle listOfVehicle : listOfVehicles) {
-            if (name.equals(listOfVehicle.getName())) {
-                listOfVehicle.setVehicleRented(rent);
-                return message;
+//        try {
+            for (Vehicle listOfVehicle : listOfVehicles) {
+                if (name.equals(listOfVehicle.getName())) {
+                    listOfVehicle.setVehicleRented(rent);
+                    return message;
+                }
             }
-        }
-        message = "Vehicle with name " + name + " not found";
+            message = "Vehicle with name " + name + " not found";
+//        } catch (Exception e){
+//            System.out.println("wrong");
+//        }
+
 
         return message;
     }
